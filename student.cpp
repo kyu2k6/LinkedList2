@@ -29,7 +29,11 @@ float* Student::getgpa() {
 	return &gpa;
 }
 
+void Student::setInfo() {
+
+}
+
 void Student::print() {
-	cout << getfirstname() << getlastname() << ", " << "ID: " << getid() 
-		<< ", " << "GPA: " << setprecision(2) << getgpa();	
+	cout << getfirstname() << ' ' << getlastname() << ", " << "ID: " << id 
+		<< ", " << "GPA: " << fixed << setprecision(2) << gpa << endl;
 }

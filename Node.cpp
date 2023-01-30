@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-
+#include "Student.h"
 #include "Node.h"
 
 using namespace std;
@@ -11,9 +11,10 @@ Node::Node() {
   next = NULL;
 }
 
-Node::Node(Student* newstudent) {
+Node::Node(Student* newstudent, Node* newnext) {
   student = newstudent;
-  next = NULL;
+  next = newnext;
+  student->setInfo();
 }
 
 //functions
@@ -31,5 +32,5 @@ void Node::setNext(Node* newnext) {
 
 //destructor
 Node::~Node() {
-  next = NULL;
+  delete student;
 }

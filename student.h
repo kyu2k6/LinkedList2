@@ -13,6 +13,7 @@ class Student {
        	char* getlastname();
 	int* getid();
 	float* getgpa();
+	void setInfo();
 	void print();
 
 	private:

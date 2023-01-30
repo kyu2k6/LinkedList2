@@ -13,7 +13,7 @@ class Node {
 
   //constructors
   Node();
-  Node(Student*);
+  Node(Student*, Node*);
 
   //destructor
   ~Node();
